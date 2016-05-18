@@ -7,3 +7,12 @@
 #task-form {
   display: none;
 }
+
+.task {
+  a {
+    color: 333;
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+}
