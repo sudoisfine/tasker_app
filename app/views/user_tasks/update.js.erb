@@ -1,0 +1,9 @@
+
+//render task list
+$('#tasks').html("<%= j (render @user_tasks) %>");
+
+//show new task button
+$('#new-button').show();
+
+//slide up form
+$('#task-form').slideUp(350);
