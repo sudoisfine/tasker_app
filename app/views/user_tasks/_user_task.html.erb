@@ -3,5 +3,5 @@
   <%= user_task.due_date %>
   <%= link_to fa_icon('eye'), user_task %>
   <%= link_to fa_icon('pencil'), edit_user_task_path(user_task), remote: true %>
-  <%= link_to fa_icon('trash'), user_task, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to fa_icon('trash', text: "Delete!"), user_task, remote: true, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
