@@ -4,6 +4,13 @@
 @import "font-awesome";
 @import "bootstrap-datepicker3";
 
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+
+body {
+  padding: 40px;
+  background-color: #b3ccff;
+}
+
 #task-form {
   display: none;
 }
@@ -13,6 +20,19 @@
     color: 333;
     &:hover {
       text-decoration: line-through;
+      color: red;
     }
   }
+}
+
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 8em;
+  color: #f0f0f5;
+  padding-left: 15%;
+}
+
+h3 {
+  text-align: center;
+  color: #3d3d5c;
 }
