@@ -1,11 +1,8 @@
 <div class="well">
-  <span class="task">
-   <%= link_to user_task, remote: true, method: :delete, data: { confirm: 'Are you sure?' } do %>
-    <%= user_task.description %>
-    <% end %>
-  </span>
+<%# TODO: WHY DOESN'T THIS WORK %>
 <em><%= user_task.due_date.try(:stamp, 'Monday, 12/31/16') %>
   </em>
+   <%= link_to fa_icon('square-o', text: user_task.description), user_task, remote: true, method: :delete, data: { confirm: 'Are you sure?' }, class: 'task' %>
 
 
   <span class="pull-right"><%= link_to fa_icon('pencil', text: 'Edit Task'), edit_user_task_path(user_task), remote: true %>
